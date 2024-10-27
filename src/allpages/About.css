@@ -1,0 +1,138 @@
+.about-container {
+  min-height: 100vh;
+  padding: 4rem 1rem;
+  background: linear-gradient(to bottom right, #f0f7ff, #eef2ff);
+}
+
+.about-card {
+  max-width: 48rem;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.title-underline {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: #6366f1;
+  margin: 0 auto;
+  border-radius: 9999px;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.avatar {
+  width: 8rem;
+  height: 8rem;
+  background: linear-gradient(to bottom right, #818cf8, #a855f7);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.about-description {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.skill-card {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.skill-card.frontend {
+  background-color: #eef2ff;
+}
+
+.skill-card.backend {
+  background-color: #faf5ff;
+}
+
+.skill-card.tools {
+  background-color: #eff6ff;
+}
+
+.skill-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.skill-title.frontend {
+  color: #4f46e5;
+}
+
+.skill-title.backend {
+  color: #9333ea;
+}
+
+.skill-title.tools {
+  color: #2563eb;
+}
+
+.skill-text {
+  color: #6b7280;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.resume-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #4f46e5;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #4338ca;
+}
