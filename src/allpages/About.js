@@ -13,30 +13,15 @@ const About = () => {
 
         <div className="avatar-container">
           <div className="avatar">
-            <span className="avatar-text">JD</span>
+            <span className="avatar-text">RK</span>
           </div>
         </div>
 
         <p className="about-description">
-          Hello! I'm a passionate developer with experience in building web applications 
-          using modern technologies. I enjoy solving complex problems and learning new skills. 
+          Hello! I'm a passionate developer with experience in building web applications  and mobile application
+          using modern technologies. I enjoy solving complex problems and learning new skills.
           Welcome to my portfolio!
         </p>
-
-        <div className="skills-grid">
-          <div className="skill-card frontend">
-            <h3 className="skill-title frontend">Frontend</h3>
-            <p className="skill-text">React, Vue, TypeScript</p>
-          </div>
-          <div className="skill-card backend">
-            <h3 className="skill-title backend">Backend</h3>
-            <p className="skill-text">Node.js, Python, SQL</p>
-          </div>
-          <div className="skill-card tools">
-            <h3 className="skill-title tools">Tools</h3>
-            <p className="skill-text">Git, Docker, AWS</p>
-          </div>
-        </div>
 
         <div className="button-container">
           <a href="/resume.pdf" download className="resume-button">

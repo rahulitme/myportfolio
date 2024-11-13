@@ -87,10 +87,11 @@ const Projects = () => {
       type: 'mobile'
     },
     {
-      title: 'Task Management Dashboard',
-      description: 'A web-based task management system with real-time updates, team collaboration features, and performance analytics.',
+      title: 'Cutomber feedback form',
+      description: 'A web-based Feedback Form built with React and Firebase to collect feedback from customers.',
       technologies: ['React', 'Firebase', 'Material-UI'],
-      githubUrl: 'https://github.com/yourusername/task-dashboard',
+      githubUrl: 'https://github.com/rahulitme/-customers-_survey',
+      deployurl: 'https://customers-survey-5j16.vercel.app/',
       type: 'web'
     },
     {

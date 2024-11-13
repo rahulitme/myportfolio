@@ -1,7 +1,7 @@
 .contact-container {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 8rem;
   background-color: #f7fafc; /* bg-gray-50 */
   border-radius: 8px; /* rounded-lg */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */

@@ -1,175 +1,206 @@
+/* Experience.css */
+
 /* Main container styles */
 .experience-container {
-    min-height: 100vh;
-    background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
-    padding: 4rem 1rem;
-  }
-  
-  .experience-content {
-    max-width: 64rem;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  
-  /* Header styles */
-  .experience-header {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  min-height: 100vh;
+}
+
+.experience-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+.experience-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.experience-title {
+  font-size: 2.5rem;
+  color: #2d3748;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.title-underline {
+  height: 4px;
+  width: 100px;
+  background: linear-gradient(to right, #4299e1, #667eea);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* Experience card styles */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Card header styles */
+.card-header {
+  background: linear-gradient(to right, #3182ce, #4c51bf);
+  padding: 1.5rem;
+  color: white;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.company-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.company-name, .role-title, .duration {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.company-name span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.role-title span {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+.duration span {
+  opacity: 0.8;
+}
+
+/* Icon styles */
+.icon {
+  flex-shrink: 0;
+}
+
+.icon-large {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-medium {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-small {
+  width: 18px;
+  height: 18px;
+}
+
+/* Card content styles */
+.card-content {
+  padding: 1.5rem;
+}
+
+.description {
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Projects section styles */
+.projects-section {
+  margin-top: 1.5rem;
+}
+
+.projects-title {
+  font-size: 1.25rem;
+  color: #2d3748;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  background: #f7fafc;
+  padding: 1.25rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.project-card:hover {
+  background: #edf2f7;
+}
+
+.project-name {
+  font-size: 1.125rem;
+  color: #2d3748;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  color: #4a5568;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .experience-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #1e293b;
-    margin-bottom: 1rem;
+    font-size: 2rem;
   }
-  
-  .title-underline {
-    width: 6rem;
-    height: 0.25rem;
-    background-color: #6366f1;
-    margin: 0 auto;
-    border-radius: 9999px;
-  }
-  
-  /* Experience card styles */
-  .experience-list {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .experience-card {
-    background-color: white;
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: box-shadow 0.3s ease;
-  }
-  
-  .experience-card:hover {
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Card header section */
+
   .card-header {
-    padding: 1.5rem;
-    border-bottom: 1px solid #f1f5f9;
+    padding: 1.25rem;
   }
-  
-  .company-info {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+
+  .company-name span {
+    font-size: 1.25rem;
   }
-  
-  .company-details {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .company-name {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #1e293b;
-  }
-  
-  .role-title {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+
+  .role-title span {
     font-size: 1.125rem;
-    font-weight: 600;
-    color: #475569;
   }
-  
-  .duration {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: #64748b;
-    font-size: 0.875rem;
-  }
-  
-  /* Card content section */
-  .card-content {
-    padding: 1.5rem;
-    background-color: #f8fafc;
-  }
-  
-  .description {
-    color: #475569;
-    margin-bottom: 1rem;
-  }
-  
-  /* Projects section */
-  .projects-section {
-    margin-top: 1rem;
-  }
-  
-  .projects-title {
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: #1e293b;
-    margin-bottom: 1rem;
-  }
-  
+
   .projects-grid {
-    display: grid;
-    gap: 1rem;
     grid-template-columns: 1fr;
   }
-  
-  @media (min-width: 768px) {
-    .projects-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  
-  .project-card {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border: 1px solid #e2e8f0;
-    transition: border-color 0.3s ease;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .project-card:hover {
-    border-color: #c7d2fe;
-  }
-  
-  .project-name {
-    color: #4f46e5;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .project-description {
-    color: #475569;
-    font-size: 0.875rem;
-  }
-  
-  /* Icon styles */
-  .icon {
-    color: #6366f1;
-  }
-  
-  .icon-small {
-    width: 1rem;
-    height: 1rem;
-  }
-  
-  .icon-medium {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
-  
-  .icon-large {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
+}
+
+.experience-card {
+  animation: fadeIn 0.5s ease-out;
+}
