@@ -98,6 +98,7 @@ const Projects = () => {
       description: 'A sophisticated daily reminder application that helps users manage their schedule. Features include customizable time picker, daily notifications, and persistent storage.',
       technologies: ['Flutter', 'Dart', 'Local Storage'],
       githubUrl: 'https://github.com/rahulitme/Daily_Reminder_App',
+      deployurl: 'https://welcome-aa71e.web.app',
       type: 'mobile'
     },
     {
