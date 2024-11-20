@@ -1,199 +1,186 @@
-/* Experience.css */
-
-/* Main container styles */
 .experience-container {
-  padding: 3rem 1rem;
-  background: linear-gradient(to right, #f8f9fa, #e9ecef);
-  min-height: 100vh;
+  max-width: 64rem; /* max-w-5xl */
+  margin-left: auto; /* mx-auto */
+  margin-right: auto; /* mx-auto */
+  padding-top: 3rem; /* py-12 */
+  padding-bottom: 3rem; /* py-12 */
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem; /* px-4 */
+}
+
+@media (min-width: 640px) {
+  .experience-container {
+    padding-left: 1.5rem; /* sm:px-6 */
+    padding-right: 1.5rem; /* sm:px-6 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .experience-container {
+    padding-left: 2rem; /* lg:px-8 */
+    padding-right: 2rem; /* lg:px-8 */
+  }
 }
 
 .experience-content {
-  max-width: 1200px;
-  margin: 0 auto;
+  margin-bottom: 2rem; /* space-y-8 */
 }
 
-/* Header styles */
 .experience-header {
-  text-align: center;
-  margin-bottom: 3rem;
+  text-align: center; /* text-center */
+  margin-bottom: 3rem; /* mb-12 */
 }
 
 .experience-title {
-  font-size: 2.5rem;
-  color: #2d3748;
-  font-weight: 700;
-  margin-bottom: 1rem;
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  color: #1a202c; /* text-gray-900 */
+  margin-bottom: 1rem; /* mb-4 */
 }
 
 .title-underline {
-  height: 4px;
-  width: 100px;
-  background: linear-gradient(to right, #4299e1, #667eea);
-  margin: 0 auto;
-  border-radius: 2px;
+  height: 0.25rem; /* h-1 */
+  width: 6rem; /* w-24 */
+  background-color: #2563eb; /* bg-blue-600 */
+  margin-left: auto; /* mx-auto */
+  margin-right: auto; /* mx-auto */
+  border-radius: 9999px; /* rounded-full */
 }
 
-/* Experience card styles */
 .experience-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  margin-bottom: 2rem; /* space-y-8 */
 }
 
 .experience-card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* bg-white */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* transform transition duration-300 */
 }
 
 .experience-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* hover:shadow-xl */
+  transform: translateY(-0.25rem); /* hover:-translate-y-1 */
 }
 
-/* Card header styles */
 .card-header {
-  background: linear-gradient(to right, #3182ce, #4c51bf);
-  padding: 1.5rem;
-  color: white;
+  background: linear-gradient(to right, #2563eb, #1d4ed8); /* bg-gradient-to-r from-blue-600 to-blue-700 */
+  padding: 1.5rem; /* p-6 */
+  color: #ffffff; /* text-white */
 }
 
 .company-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  margin-bottom: 0.75rem; /* space-y-3 */
 }
 
 .company-details {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  margin-bottom: 0.5rem; /* space-y-2 */
 }
 
-.company-name, .role-title, .duration {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.company-name {
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  margin-right: 0.5rem; /* space-x-2 */
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600; /* font-semibold */
 }
 
-.company-name span {
-  font-size: 1.5rem;
-  font-weight: 600;
+.role-title {
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  margin-right: 0.5rem; /* space-x-2 */
+  font-size: 1.125rem; /* text-lg */
 }
 
-.role-title span {
-  font-size: 1.25rem;
-  opacity: 0.9;
+.duration {
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  margin-right: 0.5rem; /* space-x-2 */
+  font-size: 0.875rem; /* text-sm */
+  color: #bfdbfe; /* text-blue-100 */
 }
 
-.duration span {
-  opacity: 0.8;
-}
-
-/* Icon styles */
 .icon {
-  flex-shrink: 0;
+  flex-shrink: 0; /* flex-shrink-0 */
 }
 
 .icon-large {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem; /* w-6 */
+  height: 1.5rem; /* h-6 */
 }
 
 .icon-medium {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem; /* w-5 */
+  height: 1.25rem; /* h-5 */
 }
 
 .icon-small {
-  width: 18px;
-  height: 18px;
+  width: 1rem; /* w-4 */
+  height: 1rem; /* h-4 */
 }
 
-/* Card content styles */
 .card-content {
-  padding: 1.5rem;
+  padding: 1.5rem; /* p-6 */
+  background-color: #ffffff; /* bg-white */
 }
 
 .description {
-  color: #4a5568;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+  color: #718096; /* text-gray-600 */
+  margin-bottom: 1.5rem; /* mb-6 */
 }
 
-/* Projects section styles */
 .projects-section {
-  margin-top: 1.5rem;
+  margin-top: 1.5rem; /* mt-6 */
 }
 
 .projects-title {
-  font-size: 1.25rem;
-  color: #2d3748;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #e2e8f0;
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+  color: #1a202c; /* text-gray-900 */
+  margin-bottom: 1rem; /* mb-4 */
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
+  display: grid; /* grid */
+  grid-template-columns: repeat(1, minmax(0, 1fr)); /* grid-cols-1 */
+  gap: 1rem; /* gap-4 */
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* md:grid-cols-2 */
+  }
 }
 
 .project-card {
-  background: #f7fafc;
-  padding: 1.25rem;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
+  background-color: #f9fafb; /* bg-gray-50 */
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 1rem; /* p-4 */
+  transition: background-color 0.2s ease; /* transition duration-200 */
 }
 
 .project-card:hover {
-  background: #edf2f7;
+  background-color: #f3f4f6; /* hover:bg-gray-100 */
 }
 
 .project-name {
-  font-size: 1.125rem;
-  color: #2d3748;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  color: #2563eb; /* text-blue-600 */
+  font-weight: 600; /* font-semibold */
+  margin-bottom: 0.5rem; /* mb-2 */
 }
 
 .project-description {
-  color: #4a5568;
-  line-height: 1.5;
+  font-size: 0.875rem; /* text-sm */
+  color: #718096; /* text-gray-600 */
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .experience-title {
-    font-size: 2rem;
-  }
-
-  .card-header {
-    padding: 1.25rem;
-  }
-
-  .company-name span {
-    font-size: 1.25rem;
-  }
-
-  .role-title span {
-    font-size: 1.125rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Animation keyframes */
+/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -202,5 +189,5 @@
 }
 
 .experience-card {
-  animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out forwards;
 }
