@@ -1,0 +1,193 @@
+.experience-container {
+  max-width: 64rem; /* max-w-5xl */
+  margin-left: auto; /* mx-auto */
+  margin-right: auto; /* mx-auto */
+  padding-top: 3rem; /* py-12 */
+  padding-bottom: 3rem; /* py-12 */
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem; /* px-4 */
+}
+
+@media (min-width: 640px) {
+  .experience-container {
+    padding-left: 1.5rem; /* sm:px-6 */
+    padding-right: 1.5rem; /* sm:px-6 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .experience-container {
+    padding-left: 2rem; /* lg:px-8 */
+    padding-right: 2rem; /* lg:px-8 */
+  }
+}
+
+.experience-content {
+  margin-bottom: 2rem; /* space-y-8 */
+}
+
+.experience-header {
+  text-align: center; /* text-center */
+  margin-bottom: 3rem; /* mb-12 */
+}
+
+.experience-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  color: #1a202c; /* text-gray-900 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.title-underline {
+  height: 0.25rem; /* h-1 */
+  width: 6rem; /* w-24 */
+  background-color: #2563eb; /* bg-blue-600 */
+  margin-left: auto; /* mx-auto */
+  margin-right: auto; /* mx-auto */
+  border-radius: 9999px; /* rounded-full */
+}
+
+.experience-list {
+  margin-bottom: 2rem; /* space-y-8 */
+}
+
+.experience-card {
+  background-color: #ffffff; /* bg-white */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  overflow: hidden;
+  transform: translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* transform transition duration-300 */
+}
+
+.experience-card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* hover:shadow-xl */
+  transform: translateY(-0.25rem); /* hover:-translate-y-1 */
+}
+
+.card-header {
+  background: linear-gradient(to right, #2563eb, #1d4ed8); /* bg-gradient-to-r from-blue-600 to-blue-700 */
+  padding: 1.5rem; /* p-6 */
+  color: #ffffff; /* text-white */
+}
+
+.company-info {
+  margin-bottom: 0.75rem; /* space-y-3 */
+}
+
+.company-details {
+  margin-bottom: 0.5rem; /* space-y-2 */
+}
+
+.company-name {
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  margin-right: 0.5rem; /* space-x-2 */
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600; /* font-semibold */
+}
+
+.role-title {
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  margin-right: 0.5rem; /* space-x-2 */
+  font-size: 1.125rem; /* text-lg */
+}
+
+.duration {
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  margin-right: 0.5rem; /* space-x-2 */
+  font-size: 0.875rem; /* text-sm */
+  color: #bfdbfe; /* text-blue-100 */
+}
+
+.icon {
+  flex-shrink: 0; /* flex-shrink-0 */
+}
+
+.icon-large {
+  width: 1.5rem; /* w-6 */
+  height: 1.5rem; /* h-6 */
+}
+
+.icon-medium {
+  width: 1.25rem; /* w-5 */
+  height: 1.25rem; /* h-5 */
+}
+
+.icon-small {
+  width: 1rem; /* w-4 */
+  height: 1rem; /* h-4 */
+}
+
+.card-content {
+  padding: 1.5rem; /* p-6 */
+  background-color: #ffffff; /* bg-white */
+}
+
+.description {
+  color: #718096; /* text-gray-600 */
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.projects-section {
+  margin-top: 1.5rem; /* mt-6 */
+}
+
+.projects-title {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+  color: #1a202c; /* text-gray-900 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.projects-grid {
+  display: grid; /* grid */
+  grid-template-columns: repeat(1, minmax(0, 1fr)); /* grid-cols-1 */
+  gap: 1rem; /* gap-4 */
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* md:grid-cols-2 */
+  }
+}
+
+.project-card {
+  background-color: #f9fafb; /* bg-gray-50 */
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 1rem; /* p-4 */
+  transition: background-color 0.2s ease; /* transition duration-200 */
+}
+
+.project-card:hover {
+  background-color: #f3f4f6; /* hover:bg-gray-100 */
+}
+
+.project-name {
+  color: #2563eb; /* text-blue-600 */
+  font-weight: 600; /* font-semibold */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.project-description {
+  font-size: 0.875rem; /* text-sm */
+  color: #718096; /* text-gray-600 */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.experience-card {
+  animation: fadeIn 0.5s ease-out forwards;
+}
