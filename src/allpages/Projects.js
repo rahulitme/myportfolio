@@ -66,7 +66,7 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'Fit AND FINDER',
+      title: 'FIT AND FINDER',
       description: 'The Fit and Finder mobile app leverages Dart and Firebase to provide personalized clothing recommendations based on facial analysis.',
       technologies: ['Flutter', 'Dart', 'Firebase'],
       githubUrl: 'https://github.com/rahulitme/Final_Year_Project',
@@ -75,8 +75,8 @@ const Projects = () => {
     {
       title: 'Personal Portfolio',
       description: 'A modern, responsive portfolio website built with React and Next.js. Features dynamic content loading, dark mode support, and seamless animations.',
-      technologies: ['React', 'Next.js', 'Tailwind CSS'],
-      githubUrl: 'https://github.com/yourusername/portfolio',
+      technologies: ['React',  'Tailwind CSS'],
+      githubUrl: 'https://github.com/rahulitme/myportfolio',
       type: 'web'
     },
     {
@@ -92,6 +92,14 @@ const Projects = () => {
       technologies: ['React', 'Firebase', 'Material-UI'],
       githubUrl: 'https://github.com/rahulitme/-customers-_survey',
       deployurl: 'https://customers-survey-5j16.vercel.app/',
+      type: 'web'
+    },
+    {
+      title: 'Travling web app',
+      description: 'Travel web app is provideing the faculity for the user like best palces.user guidence,enquiry best hotel in the word and best palece in the world.',
+      technologies: ['React', 'css', 'bootstrap',],
+      githubUrl: 'https://github.com/rahulitme/Travel-web-application',
+      deployurl: 'https://travel-web-application.vercel.app/',
       type: 'web'
     },
     {
