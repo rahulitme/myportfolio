@@ -1,7 +1,7 @@
 .header {
-  background: linear-gradient(to right, #5e91c4, #3498db);
-  padding: 1rem 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #3a7bd5, #00d2ff);
+  padding: 1.2rem 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   position: fixed;
   top: 0;
   left: 0;
@@ -24,28 +24,34 @@
   font-weight: 700;
   letter-spacing: 1px;
   margin: 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .header-nav {
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .header-nav button {
-  background: transparent;
-  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #ffffff;
   font-size: 1rem;
   font-weight: 500;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   transition: all 0.3s ease;
-  border-radius: 4px;
+  border-radius: 6px;
+  backdrop-filter: blur(5px);
 }
 
 .header-nav button:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-nav button:active {
+  transform: translateY(0);
 }
 
 /* Responsive design */
