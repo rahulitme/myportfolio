@@ -111,10 +111,17 @@ const Projects = () => {
       type: 'mobile'
     },
     {
-      title: 'E-commerce Platform',
-      description: 'A full-featured e-commerce website with product management, user authentication, and payment integration.',
-      technologies: ['React', 'Node.js', 'MongoDB'],
-      githubUrl: 'https://github.com/yourusername/ecommerce',
+      title: 'Library Management system',
+      description: 'A web-based library management system that show  detilas about college   details',
+      technologies: ['React', 'Node.js', ],
+      githubUrl: 'https://github.com/rahulitme/library-management',
+      type: 'web'
+    },
+    {
+      title: 'Weather Application',
+      description: 'A Weather appliction that provides real-time weather updates and forecasts for any location',
+      technologies: ['React', 'open weather Api'],
+      githubUrl: 'https://github.com/rahulitme/Weather_Web_app',
       type: 'web'
     },
     {
